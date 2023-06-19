@@ -1,9 +1,12 @@
 import argparse
 import os
 
-from uvcgan2 import ROOT_OUTDIR, train
-from uvcgan2.presets import GEN_PRESETS
-from uvcgan2.utils.parsers import add_preset_name_parser, add_batch_size_parser
+# from uvcgan2 import ROOT_OUTDIR, train 
+# from uvcgan2.presets import GEN_PRESETS
+# from uvcgan2.utils.parsers import add_preset_name_parser, add_batch_size_parser
+from uvcGAN2_custom import ROOT_OUTDIR, train
+from uvcGAN2_custom.presets import GEN_PRESETS
+from uvcGAN2_custom.utils.parsers import add_preset_name_parser, add_batch_size_parser
 
 def parse_cmdargs():
     parser = argparse.ArgumentParser(description = 'Pretrain AFHQ generators')
