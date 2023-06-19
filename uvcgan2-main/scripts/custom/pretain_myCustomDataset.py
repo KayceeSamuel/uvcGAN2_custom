@@ -74,7 +74,8 @@ args_dict = {
     'steps_per_epoch'  : 32 * 1024 // cmdargs.batch_size,
 # args
     'label'      : f'pretrain-{cmdargs.gen}',
-    'outdir'     : os.path.join(ROOT_OUTDIR, 'afhq_resized_lanczos'),
+    # 'outdir'     : os.path.join(ROOT_OUTDIR, 'afhq_resized_lanczos'),
+     'outdir'     : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/output'),
     'log_level'  : 'DEBUG',
     'checkpoint' : 100,
 }
