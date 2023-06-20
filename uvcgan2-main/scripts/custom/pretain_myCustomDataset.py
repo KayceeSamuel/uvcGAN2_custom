@@ -1,5 +1,7 @@
 import argparse
 import os
+import sys
+sys.path.append('../../../../uvcgan2-main')
 
 from uvcgan2 import ROOT_OUTDIR, train 
 from uvcgan2.presets import GEN_PRESETS
