@@ -43,7 +43,7 @@ args_dict = {
         'merge_type' : 'none',
         'workers'    : 1,
     },
-    'epochs'        : 500,
+    'epochs'        : 100,
     'discriminator' : None,
     'generator' : {
         **GEN_PRESETS[cmdargs.gen],
@@ -80,7 +80,7 @@ args_dict = {
     # 'outdir'     : os.path.join(ROOT_OUTDIR, 'afhq_resized_lanczos'),
      'outdir'     : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/output'),
     'log_level'  : 'DEBUG',
-    'checkpoint' : 100,
+    'checkpoint' : 5,
 }
 
 train(args_dict)
