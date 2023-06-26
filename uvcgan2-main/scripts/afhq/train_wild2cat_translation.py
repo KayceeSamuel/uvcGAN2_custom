@@ -40,7 +40,7 @@ def get_transfer_preset(cmdargs):
         return None
 
     base_model = (
-        'afhq_resized_lanczos/'
+        '/content/drive/MyDrive/uvcgan2/output'
         'model_m(simple-autoencoder)_d(None)'
         f"_g({GEN_PRESETS[cmdargs.gen]['model']})_pretrain-{cmdargs.gen}"
     )
@@ -65,7 +65,7 @@ args_dict = {
                 'dataset' : {
                     'name'   : 'image-domain-hierarchy',
                     'domain' : domain,
-                    'path'   : 'afhq_resized_lanczos',
+                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train/train',
                 },
                 'shape'           : (3, 256, 256),
                 'transform_train' : [
@@ -77,7 +77,7 @@ args_dict = {
         'merge_type' : 'unpaired',
         'workers'    : 1,
     },
-    'epochs'      : 500,
+    'epochs'      : 100,
     'discriminator' : {
         'model'      : 'basic',
         'model_args' : { 'shrink_output' : False, },
@@ -133,9 +133,9 @@ args_dict = {
         f'{cmdargs.gen}-{cmdargs.head}_({cmdargs.no_pretrain}'
         f':{cmdargs.lambda_cyc}:{cmdargs.lambda_gp}:{cmdargs.lr_gen})'
     ),
-    'outdir' : os.path.join(ROOT_OUTDIR, 'afhq_resized_lanczos', 'wild2cat'),
+    'outdir' : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/trained', '/content/drive/MyDrive/uvcgan2/trained/anime_para'),
     'log_level'  : 'DEBUG',
-    'checkpoint' : 50,
+    'checkpoint' : 2,
 }
 
 train(args_dict)
