@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.append('../../../../uvcgan2-main')
 
-from uvcgan2 import ROOT_OUTDIR, train 
+from uvcgan2 import ROOT_OUTDIR, train, try_continue_training
 from uvcgan2.presets import GEN_PRESETS
 from uvcgan2.utils.parsers import add_preset_name_parser, add_batch_size_parser
 
