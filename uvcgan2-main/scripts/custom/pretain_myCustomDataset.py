@@ -23,7 +23,7 @@ args_dict = {
             {
                 'dataset' : {
                     'name'   : 'imagedir',
-                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train',
+                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train/train',
                 },
                 'shape'           : (3, 256, 256),
                 'transform_train' : [
