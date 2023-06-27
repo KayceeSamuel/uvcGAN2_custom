@@ -65,15 +65,15 @@ args_dict = {
                 'dataset' : {
                     'name'   : 'image-domain-hierarchy',
                     'domain' : domain,
-                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train',
+                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train/train',
                 },
                 'shape'           : (3, 256, 256),
                 'transform_train' : [
                     'random-flip-horizontal',
                 ],
                 'transform_test' : None,
-            
-            } for domain in [ 'trainA', 'trainB' ]
+            } for domain in [ 'wild', 'cat' ]
+            # } for domain in [ 'trainA', 'trainB' ]
         ],
         'merge_type' : 'unpaired',
         'workers'    : 1,
