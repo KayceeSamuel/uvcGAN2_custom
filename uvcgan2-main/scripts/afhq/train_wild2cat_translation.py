@@ -72,7 +72,7 @@ args_dict = {
                     'random-flip-horizontal',
                 ],
                 'transform_test' : None,
-            # } for domain in [ 'wild', 'cat' ]
+            
             } for domain in [ 'trainA', 'trainB' ]
         ],
         'merge_type' : 'unpaired',
