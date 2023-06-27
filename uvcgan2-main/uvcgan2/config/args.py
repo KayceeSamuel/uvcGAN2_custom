@@ -77,7 +77,7 @@ class Args:
         savedir = config.get_savedir(outdir, label)
 
         result = Args(config, savedir, label, log_level, checkpoint)
-        result.check_no_collision()
+        # result.check_no_collision() disable check collision
 
         result.save()
 
