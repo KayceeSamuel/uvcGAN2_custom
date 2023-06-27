@@ -65,7 +65,7 @@ args_dict = {
                 'dataset' : {
                     'name'   : 'image-domain-hierarchy',
                     'domain' : domain,
-                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train/train',
+                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train/',
                 },
                 'shape'           : (3, 256, 256),
                 'transform_train' : [
