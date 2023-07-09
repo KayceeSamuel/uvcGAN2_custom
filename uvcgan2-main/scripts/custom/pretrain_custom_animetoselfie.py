@@ -83,7 +83,7 @@ args_dict = {
     #'outdir'     : os.path.join(ROOT_OUTDIR, 'anime2selfie'),
     'outdir'     : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/output2'),
     'log_level'  : 'DEBUG',
-    'checkpoint' : 100,
+    'checkpoint' : 10,
 }
 
 train(args_dict)
