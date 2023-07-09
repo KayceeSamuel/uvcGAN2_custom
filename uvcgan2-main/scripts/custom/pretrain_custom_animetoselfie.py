@@ -23,7 +23,7 @@ args_dict = {
                 'dataset' : {
                     'name'   : 'cyclegan',
                     'domain' : domain,
-                    'path'   : 'anime2selfie',
+                    'path'   : '/content/drive/MyDrive/slayersAI_cycle/dataset/new_train',
                 },
                 'shape'           : (3, 256, 256),
                 'transform_train' : [
@@ -80,7 +80,8 @@ args_dict = {
     'steps_per_epoch'  : 32 * 1024 // cmdargs.batch_size,
 # args
     'label'      : f'pretrain-{cmdargs.gen}',
-    'outdir'     : os.path.join(ROOT_OUTDIR, 'anime2selfie'),
+    #'outdir'     : os.path.join(ROOT_OUTDIR, 'anime2selfie'),
+    'outdir'     : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/output2'),
     'log_level'  : 'DEBUG',
     'checkpoint' : 100,
 }
