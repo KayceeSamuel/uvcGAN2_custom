@@ -40,7 +40,7 @@ def get_transfer_preset(cmdargs):
         return None
 
     base_model = (
-        '/content/drive/MyDrive/uvcgan2/output2/'
+        '/content/drive/MyDrive/uvcgan2/output2/checkpoints/'
         'model_m(autoencoder)_d(None)'
         f"_g({GEN_PRESETS[cmdargs.gen]['model']})_pretrain-{cmdargs.gen}"
     )
