@@ -40,7 +40,7 @@ def get_transfer_preset(cmdargs):
         return None
 
     base_model = (
-        '/content/drive/MyDrive/uvcgan2/output'
+        '/content/drive/MyDrive/uvcgan2/output2'
         'model_m(autoencoder)_d(None)'
         f"_g({GEN_PRESETS[cmdargs.gen]['model']})_pretrain-{cmdargs.gen}"
     )
@@ -135,7 +135,7 @@ args_dict = {
         f'{cmdargs.gen}-{cmdargs.head}_({cmdargs.no_pretrain}'
         f':{cmdargs.lambda_cyc}:{cmdargs.lambda_gp}:{cmdargs.lr_gen})'
     ),
-    'outdir' : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/trained', '/content/drive/MyDrive/uvcgan2/trained/anime_para'),
+    'outdir' : os.path.join(ROOT_OUTDIR, '/content/drive/MyDrive/uvcgan2/trained', '/content/drive/MyDrive/uvcgan2/trained/anime_para2'),
     'log_level'  : 'DEBUG',
     'checkpoint' : 2,
 }
