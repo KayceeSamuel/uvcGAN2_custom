@@ -79,7 +79,7 @@ args_dict = {
         'merge_type' : 'unpaired',
         'workers'    : 1,
     },
-    'epochs'      : 500,
+    'epochs'      : 1000,
     'discriminator' : {
         'model'      : 'basic',
         'model_args' : { 'shrink_output' : False, },
