@@ -30,7 +30,8 @@ def parse_cmdargs():
 
     parser.add_argument(
         '--lr-gen', dest = 'lr_gen', type = float,
-        default = 1e-4, help = 'learning rate of the generator'
+        #default = 1e-4, help = 'learning rate of the generator' this is the initial
+        default = 1e-5, help = 'learning rate of the generator'
     )
 
     return parser.parse_args()
@@ -83,7 +84,8 @@ args_dict = {
         'model_args' : { 'shrink_output' : False, },
         'optimizer'  : {
             'name'  : 'Adam',
-            'lr'    : 1e-4,
+            #'lr'    : 1e-4, this is the initial
+            'lr'    : 1e-5,
             'betas' : (0.5, 0.99),
         },
         'weight_init' : {
